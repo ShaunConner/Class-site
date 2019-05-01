@@ -1,30 +1,66 @@
 @font-face {
-    font-family: LeagueGothic;
-    font-weight: 
-    src: url("fonts/LeagueGothic-Regular") format("otf");
-    
+    font-family: 'league_gothicCnRg';
+    src: url('leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('leaguegothic-condensedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 
+
+
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+
+    font-family: league_gothicregular;
+    font-weight: 100;
+    max-width: 600px;
+    text-align: center;
+}
+
+.page1head{
+    
+    font-family: league_gothicregular;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);    
+}
+ 
+.page1-intro{
+    
+    position: absolute;
+    top: 30%;
+    left: 50%:
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+}
 .page1-intro p{
     
-    display: flex;
-    flex-direction: column;
-    
-    max-width: 640px;
+    position: absolute;
     text-align: center;
-    color: #6c6c79;
-    
+    color: black;
     
 }
 
 
 .start-button {
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 50%;
     background-color: white;
-    border-color: #262629;
+    border-color: black;
     border-bottom-style: solid
     cursor: pointer;
     justify-content: center;

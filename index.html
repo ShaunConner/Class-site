@@ -2,13 +2,37 @@
 <html>
     <head>
         <title>Designs Story</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet"  type="text/css" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="/wp-includes/js/jquery/jquery-migrate.min.js"></script>
     </head>
 
     <body>
-    
-      
-        <div class="page1-intro"><p class="f-large-paragraph">Designers vs Directors vs Authors. This is an interactive website that will express Shaun Conner’s thoughts about Designer as Author, and Fuck Content by Michael Rock. The website will show off the ways in which design and film making are more or less the same by showing off the many elements designers have to use when creating work. 
+        
+    <script>
+	   jQuery('body').css('display','none');
+	   jQuery(document).ready(function() {
+		  jQuery('body').fadeIn();
+		  jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){			
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					alert(thehref)
+					window.location = thehref					
+				});
+			}
+		});
+	});
+	setTimeout(function(){
+		jQuery('body').fadeIn();
+	},1000)
+    </script>
+        
+        <h1 class="page1head">Designers vs Directors vs Authors.</h1>
+        
+        <div class="page1-intro"><p>This is an interactive website that will express Shaun Conner’s thoughts about Designer as Author, and Fuck Content by Michael Rock. The website will show off the ways in which design and film making are more or less the same by showing off the many elements designers have to use when creating work. 
         </p>
         </div>
         
